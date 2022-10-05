@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="mx-auto max-w-4xl bg-gradient-to-b from-backsun to-backgreen">
+      <div className="mx-auto max-w-7xl bg-gradient-to-b from-backsun to-backgreen">
         <Header />
         <main>{children}</main>
         <Footer />

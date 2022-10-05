@@ -5,7 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: { lineHeight: { headline: "1.2", paragraph: "1.6" } },
     colors: {
       transparent: "transparent",
       current: "currentColor",

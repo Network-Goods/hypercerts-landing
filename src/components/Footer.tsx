@@ -16,18 +16,30 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a className="cursor-pointer" href="/">
+          <a
+            className="cursor-pointer"
+            href="https://forms.gle/ACe4doFJh7bW9nac7"
+            target="_bla"
+          >
             Sign up for updates
           </a>
         </li>
         <li>
-          <a className="cursor-pointer" href="/">
+          <a
+            className="cursor-pointer"
+            target="_blank"
+            href="https://protocol.ai/legal/#privacy-policy"
+          >
             Privacy policy
           </a>
         </li>
         <li>
-          <a className="cursor-pointer" href="/">
-            Protocol Labs
+          <a
+            className="cursor-pointer"
+            target="_blank"
+            href="https://protocol.ai/legal/#terms-of-service"
+          >
+            Terms &amp; Conditions
           </a>
         </li>
       </ul>
