@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: "/hypercerts-landing",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `HyperCerts`,
+    description: `Using the same HyperCert primitive, funders and projects create a scalable, interoperable and transparent funding environment for innovative public goods.`,
+    author: `@protocollabs`,
+    siteUrl: `https://network-goods.github.io/hypercerts-landing`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -21,15 +21,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `hypercerts-landing`,
+        short_name: `hypercerts-landing`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#FEF5AC`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
     {

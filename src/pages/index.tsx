@@ -13,33 +13,67 @@ const IndexPage = () => (
         backgroundImage: "url(hero-background.svg)",
       }}
     >
-      <h1 className="text-4xl mb-5 sm:mb-2 sm:text-6xl font-bold text-center text-bark !leading-headline">
+      <h1 className="text-4xl mb-5 sm:mb-2 sm:text-6xl font-black text-center text-bark !leading-headline">
         Rewarding impact
-        <br /> with Hypercerts
+        <br /> with HyperCerts
       </h1>
-      <p className=" max-w-2xl leading-paragraph">
-        We want to realign what we reward with what we value. Instead of
-        rewarding economic activities that destroy our planet or exploit people,
-        let’s build scalable retrospective reward systems for any action with
-        truly positive outcomes. HyperCerts are a tool for that.
+      <p className=" max-w-2xl leading-paragraph font-bold">
+        To solve the challenges we face in this century, we need scalable and
+        sustainable financing models for public goods that reward contributors
+        for the positive impact they create.
       </p>
     </section>
     <section
-      id="features"
-      className=" p-36 flex flex-row space-x-16 space-x-reverse"
+      id="features-token"
+      className=" p-36 flex flex-row space-x-24 space-x-reverse"
     >
-      <img src="example-token.svg" className=" max-w-sm order-2" />
-      <div className="order-1">
-        <h2 className="font-bold text-5xl text-evergreen leading-headline mb-9">
-          HyperCerts = Carbon credits, but on any impact vector.
+      <img src="example-token.svg" className="w-1/2 order-2 flex-shrink" />
+      <div className="order-1 w-1/2 flex-shrink">
+        <h2 className="font-black text-5xl text-evergreen leading-headline mb-9">
+          HyperCerts are a tool to build scalable retrospective reward systems
+          for impact.
         </h2>
         <p className="text-sm font-medium leading-paragraph">
-          Examples. Not only what we can measure. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          HyperCerts are like carbon credits, but on any impact vector. While
+          carbon credits are not perfect, they allow to reward projects for
+          positive outcomes retrospectively, i.e. when these outcomes are
+          observable. HyperCerts enable this for other impact areas, such as
+          education, healthcare, AI safety and open source software.
         </p>
       </div>
     </section>
+    <Feature
+      id="recurring"
+      image="recurring.svg"
+      headline="Recurring income for public goods"
+    >
+      Retrospective funding rewards projects for the impact they have created.
+      As long as projects create impact, they also create HyperCerts for the
+      impact and sell these. In contrast to today’s grant systems, projects have
+      recurring income streams.
+    </Feature>
+    <Feature
+      id="high-potential"
+      image="high-potential.svg"
+      headline="High-potential public goods"
+    >
+      Buying HyperCerts retrospectively allows funders to increase their funding
+      the more impact has been created. Projects are incentivized to maximize
+      their positive impact. As they benefit from a large positive impact, they
+      can also incur the risk that projects fail. Retrospective funding
+      encourages high-risk/high-potential public goods.
+    </Feature>
+    <Feature
+      id="de-risking"
+      image="bridge.svg"
+      headline="De-risking impact-funding"
+    >
+      Retrospective funders allocate their funds more effectively as they face
+      less uncertainty about the impact projects had. This is especially
+      important when the impact of public goods doesn't increase linearly.
+      Retrospective funders wouldn’t waste funds by rewarding a project for
+      building half a bridge.
+    </Feature>
     <section
       id="claim"
       className="flex flex-col items-center justify-center bg-no-repeat bg-contain bg-center"
@@ -47,19 +81,34 @@ const IndexPage = () => (
         backgroundImage: "url(claim-background.svg)",
       }}
     >
-      <h2 className="md:px-36 my-44 text-2xl sm:text-4xl font-bold text-center text-evergreen !leading-headline">
-        The HyperCert ledger brings full transparency to Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
+      <h2 className="md:px-36 my-44 text-2xl sm:text-4xl font-black text-center text-evergreen !leading-headline">
+        Using the same HyperCert primitive, funders and projects create a
+        scalable, interoperable and transparent funding environment for
+        innovative public goods.
       </h2>
     </section>
-    <div
+    {/* <div
       className=" h-[1000px] bg-no-repeat bg-right"
       style={{ backgroundImage: "url(body-background.svg)" }}
     >
       &nbsp;
-    </div>
+    </div> */}
   </Layout>
+)
+
+const Feature = ({ id, image, headline, children }) => (
+  <section
+    id={`features-${id}`}
+    className="px-36 py-16 flex flex-row space-x-24"
+  >
+    <img src={image} className=" w-96 flex-grow" />
+    <div>
+      <h2 className="font-black text-2xl text-bark leading-headline mb-5">
+        {headline}
+      </h2>
+      <p className="text-sm font-medium leading-paragraph">{children}</p>
+    </div>
+  </section>
 )
 
 export const Head = () => <Seo title="Home" />

@@ -9,8 +9,15 @@ export default function Header() {
         <span>HyperCerts</span>
       </Link>
 
-      <ul className="flex-row flex space-x-12 items-center">
-        <li className=" cursor-pointer">Documentation</li>
+      <ul className="flex-row flex space-x-12 items-center font-bold">
+        <li className=" cursor-pointer">
+          <Link
+            to="https://network-goods.github.io/hypercerts-docs/"
+            target="_blank"
+          >
+            Documentation
+          </Link>
+        </li>
         {/* <li className=" cursor-pointer">Launch Pilot</li> */}
       </ul>
     </header>

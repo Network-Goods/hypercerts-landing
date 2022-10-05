@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
       <ul className="flex flex-col items-center sm:flex-row justify-evenly pb-10 pt-6">
         <li>
-          <a className="cursor-pointer" href="/">
+          <a className="cursor-pointer" href="https://t.me/+YF9AYb6zCv1mNDJi">
             Telegram
           </a>
         </li>
