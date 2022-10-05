@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <section
       id="hero"
-      className="p-8 flex flex-col h-96 items-center justify-center bg-contain bg-no-repeat bg-top"
+      className="p-8 flex flex-col h-96 items-center justify-center bg-cover bg-no-repeat bg-top"
       style={{
         backgroundImage: "url(hero-background.svg)",
       }}
