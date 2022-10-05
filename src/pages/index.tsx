@@ -1,14 +1,14 @@
 import * as React from "react"
 
 import Layout from "../components/Layout"
-import Seo from "../components/seo"
+import Seo from "../components/Seo"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <section
       id="hero"
-      className="flex flex-col h-96 items-center justify-center bg-contain bg-top p-8"
+      className="p-8 flex flex-col h-96 items-center justify-center bg-contain bg-no-repeat bg-top"
       style={{
         backgroundImage: "url(hero-background.svg)",
       }}
@@ -23,13 +23,12 @@ const IndexPage = () => (
         for the positive impact they create.
       </p>
     </section>
-    <section
-      id="features-token"
-      className=" p-36 flex flex-row space-x-24 space-x-reverse"
-    >
-      <img src="example-token.svg" className="w-1/2 order-2 flex-shrink" />
-      <div className="order-1 w-1/2 flex-shrink">
-        <h2 className="font-black text-5xl text-evergreen leading-headline mb-9">
+    <section id="features-token" className="p-8 md:p-36 md:flex md:flex-row">
+      <p className="w-64 md:w-1/2 order-2 flex-shrink mx-auto md:mx-0 align-top mb-16 md:mb-0">
+        <img src="example-token.svg" />
+      </p>
+      <div className="order-1 md:w-1/2 flex-shrink md:mr-24">
+        <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-evergreen leading-headline mb-9">
           HyperCerts are a tool to build scalable retrospective reward systems
           for impact.
         </h2>
@@ -76,12 +75,12 @@ const IndexPage = () => (
     </Feature>
     <section
       id="claim"
-      className="flex flex-col items-center justify-center bg-no-repeat bg-contain bg-center"
+      className="px-8 flex flex-col items-center justify-center bg-no-repeat bg-contain bg-center"
       style={{
         backgroundImage: "url(claim-background.svg)",
       }}
     >
-      <h2 className="md:px-36 my-44 text-2xl sm:text-4xl font-black text-center text-evergreen !leading-headline">
+      <h2 className="md:px-28 my-44 text-2xl sm:text-4xl font-black text-center text-evergreen !leading-headline">
         Using the same HyperCert primitive, funders and projects create a
         scalable, interoperable and transparent funding environment for
         innovative public goods.
@@ -99,9 +98,12 @@ const IndexPage = () => (
 const Feature = ({ id, image, headline, children }) => (
   <section
     id={`features-${id}`}
-    className="px-36 py-16 flex flex-row space-x-24"
+    className="px-8 md:px-36 py-16 md:flex md:flex-row md:space-x-24"
   >
-    <img src={image} className=" w-96 flex-grow" />
+    <img
+      src={image}
+      className=" w-96 flex-grow mb-16 md:mb-0 mx-auto md:mx-0"
+    />
     <div>
       <h2 className="font-black text-2xl text-bark leading-headline mb-5">
         {headline}
