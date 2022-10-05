@@ -40,7 +40,7 @@ module.exports = {
         web: [
           {
             name: `Inter`,
-            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap`,
+            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap`,
           },
         ],
       },

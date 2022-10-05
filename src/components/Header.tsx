@@ -3,8 +3,11 @@ import { Link } from "gatsby"
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-backgreen to-backsun py-5 px-10 flex flex-row justify-between text-copy">
-      <Link to="/" className="flex flex-row items-center space-x-2">
+    <header className="bg-gradient-to-r from-backgreen to-backsun py-5 px-10 flex flex-row justify-between text-copy text-xl">
+      <Link
+        to="/"
+        className="flex flex-row items-center space-x-2 no-underline"
+      >
         <img alt="Hypercerts logo" height={16} src="logo.svg" />
         <span>HyperCerts</span>
       </Link>
@@ -15,7 +18,8 @@ export default function Header() {
             to="https://network-goods.github.io/hypercerts-docs/"
             target="_blank"
           >
-            Documentation
+            <span className="sm:hidden">Docs</span>
+            <span className="hidden sm:inline">Documentation</span>
           </Link>
         </li>
         {/* <li className=" cursor-pointer">Launch Pilot</li> */}

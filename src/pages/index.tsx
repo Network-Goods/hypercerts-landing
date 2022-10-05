@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
@@ -17,7 +18,7 @@ const IndexPage = () => (
         Rewarding impact
         <br /> with HyperCerts
       </h1>
-      <p className=" max-w-2xl leading-paragraph font-bold">
+      <p className=" max-w-2xl leading-paragraph font-bold text-xl text-center">
         To solve the challenges we face in this century, we need scalable and
         sustainable financing models for public goods that reward contributors
         for the positive impact they create.
@@ -32,7 +33,7 @@ const IndexPage = () => (
           HyperCerts are a tool to build scalable retrospective reward systems
           for impact.
         </h2>
-        <p className="text-sm font-medium leading-paragraph">
+        <p className="text-xl font-medium leading-paragraph ">
           HyperCerts are like carbon credits, but on any impact vector. While
           carbon credits are not perfect, they allow to reward projects for
           positive outcomes retrospectively, i.e. when these outcomes are
@@ -86,12 +87,121 @@ const IndexPage = () => (
         innovative public goods.
       </h2>
     </section>
-    {/* <div
-      className=" h-[1000px] bg-no-repeat bg-right"
+    <section
+      id="events"
+      className=" bg-no-repeat bg-right p-8 md:p-36"
       style={{ backgroundImage: "url(body-background.svg)" }}
     >
-      &nbsp;
-    </div> */}
+      <div className=" max-w-xl mx-auto">
+        <h2 className="text-bark font-black leading-headline text-5xl mb-2">
+          Get Involved
+        </h2>
+        <p className="font-medium leading-paragraph text-xl">
+          Join the discussion on telegram or sign up for updates:
+        </p>
+        <ul className="flex flex-col text-xl leading-paragraph  sm:flex-row justify-between pb-10 pt-6 max-w-xs font-medium">
+          <li>
+            <Link
+              className="cursor-pointer"
+              to="https://t.me/+YF9AYb6zCv1mNDJi"
+            >
+              Telegram
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="cursor-pointer"
+              to="https://forms.gle/ACe4doFJh7bW9nac7"
+              target="_bla"
+            >
+              Sign up for updates
+            </Link>
+          </li>
+        </ul>
+        <hr className="max-w-xs mt-24 mb-4" />
+        <h3 className="text-evergreen font-black leading-headline text-3xl mb-5">
+          Events
+        </h3>
+        <p className="leading-paragraph text-xl">
+          HyperCerts.xyz is closely connected with the communities of Schelling
+          Point, Funding the Commons and the Sustainable Blockchain Summit.
+        </p>
+        <Item date="October 26, 2022">
+          <a href="https://fundingthecommons.io/" target="_blank">
+            Funding the Commons
+          </a>{" "}
+          @{" "}
+          <a href="https://labweek2022.plnetwork.io/" target="_blank">
+            LabWeek22
+          </a>
+        </Item>
+        <Item date="October 12, 2022">
+          <a href="https://sbs.tech/" target="_blank">
+            Sustainable Blockchain Summit LATAM 2022
+          </a>
+        </Item>
+        <Item date="October 10, 2022">
+          <a href="https://fundingthecommons.io/" target="_blank">
+            Funding the Commons
+          </a>{" "}
+          @{" "}
+          <a href="https://schellingpoint.gitcoin.co/" target="_blank">
+            Schelling Point Bogota
+          </a>
+        </Item>
+        <hr className="max-w-xs mt-24 mb-4" />
+        <h3 className="text-evergreen font-black leading-headline text-3xl mb-5">
+          Blogposts, Podcasts, and Talks
+        </h3>
+        <Item date="August 24, 2022">
+          <a
+            href="https://protocol.ai/blog/hypercert-new-primitive/"
+            target="_blank"
+          >
+            Hypercerts: A new primitive for public goods funding​
+          </a>
+          <br />
+          by{" "}
+          <a href="https://twitter.com/holkeb" target="_blank">
+            @holkeb
+          </a>
+        </Item>
+        <Item date="June 24, 2022">
+          <a href="https://youtu.be/2hOhOdCbBlU" target="_blank">
+            Hypercerts: on-chain primitives for impact markets​
+          </a>
+          <br />
+          by{" "}
+          <a href="https://twitter.com/davidad" target="_blank">
+            @davidad
+          </a>
+        </Item>
+        <Item date="June 23, 2022">
+          <a href="https://youtu.be/kyo5SxtSJ9U" target="_blank">
+            Impact Certificates | Green Pill #21​
+          </a>
+          <br />
+          by{" "}
+          <a href="http://twitter.com/emiyazono" target="_blank">
+            @emiyazono
+          </a>
+          ,{" "}
+          <a href="http://twitter.com/owocki" target="_blank">
+            @owocki
+          </a>
+        </Item>
+        <Item date="March 4, 2022">
+          <a href="https://youtu.be/acbBeGcevok" target="_blank">
+            Interoperable mechanisms for non-rival goods (Hypercerts)​
+          </a>
+          <br />
+          by{" "}
+          <a href="https://twitter.com/davidad" target="_blank">
+            @davidad
+          </a>
+        </Item>
+      </div>
+    </section>
   </Layout>
 )
 
@@ -105,12 +215,19 @@ const Feature = ({ id, image, headline, children }) => (
       className=" w-96 flex-grow mb-16 md:mb-0 mx-auto md:mx-0"
     />
     <div>
-      <h2 className="font-black text-2xl text-bark leading-headline mb-5">
+      <h2 className="font-black text-3xl text-bark leading-headline mb-5">
         {headline}
       </h2>
-      <p className="text-sm font-medium leading-paragraph">{children}</p>
+      <p className="text-xl font-medium leading-paragraph">{children}</p>
     </div>
   </section>
+)
+
+const Item = ({ date, children }) => (
+  <article className="mt-12 text-xl leading-paragraph">
+    <h4>{date}</h4>
+    <p>{children}</p>
+  </article>
 )
 
 export const Head = () => <Seo title="Home" />

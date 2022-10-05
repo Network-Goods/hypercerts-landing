@@ -11,31 +11,20 @@ export default function Footer() {
       </div>
       <ul className="flex flex-col items-center sm:flex-row justify-evenly pb-10 pt-6">
         <li>
-          <Link className="cursor-pointer" to="https://t.me/+YF9AYb6zCv1mNDJi">
-            Telegram
-          </Link>
+          <Link to="https://t.me/+YF9AYb6zCv1mNDJi">Telegram</Link>
         </li>
         <li>
-          <Link
-            className="cursor-pointer"
-            to="https://forms.gle/ACe4doFJh7bW9nac7"
-            target="_bla"
-          >
+          <Link to="https://forms.gle/ACe4doFJh7bW9nac7" target="_bla">
             Sign up for updates
           </Link>
         </li>
         <li>
-          <Link
-            className="cursor-pointer"
-            target="_blank"
-            to="https://protocol.ai/legal/#privacy-policy"
-          >
+          <Link target="_blank" to="https://protocol.ai/legal/#privacy-policy">
             Privacy policy
           </Link>
         </li>
         <li>
           <Link
-            className="cursor-pointer"
             target="_blank"
             to="https://protocol.ai/legal/#terms-of-service"
           >
