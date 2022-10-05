@@ -11,10 +11,10 @@ export default function Footer() {
       </div>
       <ul className="flex flex-col items-center sm:flex-row justify-evenly pb-10 pt-6">
         <li>
-          <Link to="https://t.me/+YF9AYb6zCv1mNDJi">Telegram</Link>
+          <Link to="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">Telegram</Link>
         </li>
         <li>
-          <Link to="https://forms.gle/ACe4doFJh7bW9nac7" target="_bla">
+          <Link to="https://forms.gle/ACe4doFJh7bW9nac7" target="_blank">
             Sign up for updates
           </Link>
         </li>
