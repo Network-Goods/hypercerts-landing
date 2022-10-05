@@ -9,9 +9,10 @@ const IndexPage = () => (
     <Seo title="Home" />
     <section
       id="hero"
-      className="p-8 flex flex-col h-96 items-center justify-center bg-cover bg-no-repeat bg-top"
+      className="px-8 py-32 sm:py-52  flex flex-col items-center justify-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: "url(hero-background.svg)",
+        backgroundPosition: "50% 30%",
       }}
     >
       <h1 className="text-4xl mb-5 sm:mb-2 sm:text-6xl font-black text-center text-bark !leading-headline">
