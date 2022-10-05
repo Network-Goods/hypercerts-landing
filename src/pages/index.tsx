@@ -63,6 +63,11 @@ const IndexPage = () => (
       their positive impact. As they benefit from a large positive impact, they
       can also incur the risk that projects fail. Retrospective funding
       encourages high-risk/high-potential public goods.
+      <br />
+      Note that retrospective funding shouldn’t be used in cases where a
+      significant negative impact is possible since a nongovernmental,
+      permissionless framework cannot impose retrospective penalties for
+      negative externalities.
     </Feature>
     <Feature
       id="de-risking"
