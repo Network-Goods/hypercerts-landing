@@ -13,7 +13,7 @@ export default function Header() {
       </Link>
 
       <ul className="flex-row flex space-x-12 items-center font-bold">
-        <li className=" cursor-pointer">
+        <li>
           <Link
             to="https://network-goods.github.io/hypercerts-docs/"
             target="_blank"
@@ -22,7 +22,12 @@ export default function Header() {
             <span className="hidden sm:inline">Documentation</span>
           </Link>
         </li>
-        {/* <li className=" cursor-pointer">Launch Pilot</li> */}
+        <li>
+          <Link to="/app">
+            Launch Pilot
+            <span className="hidden sm:inline">{' '}App</span>
+          </Link>
+        </li>
       </ul>
     </header>
   )
