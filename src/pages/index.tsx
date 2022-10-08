@@ -50,25 +50,23 @@ const IndexPage = () => (
       headline="Recurring income for public goods"
     >
       Retrospective funding rewards projects for the impact they have created.
-      As long as projects create impact, they also create HyperCerts for the
-      impact and sell these. In contrast to today’s grant systems, projects have
-      recurring income streams.
+      As long as projects create impact, they can create HyperCerts for the
+      impact and get retrospective rewards for these. In contrast to today’s 
+      grant systems, projects have recurring income streams.
     </Feature>
     <Feature
       id="high-potential"
       image="high-potential.svg"
       headline="High-potential public goods"
     >
-      Buying HyperCerts retrospectively allows funders to increase their funding
-      the more impact has been created. Projects are incentivized to maximize
-      their positive impact. As they benefit from a large positive impact, they
-      can also incur the risk that projects fail. Retrospective funding
-      encourages high-risk/high-potential public goods.
-      <br />
-      Note that retrospective funding shouldn’t be used in cases where a
-      significant negative impact is possible since a nongovernmental,
-      permissionless framework cannot impose retrospective penalties for
-      negative externalities.
+      Buying HyperCerts retrospectively allows funders to increase their funding in 
+      relation to the impact created, incentivizing projects to maximize their 
+      positive impact. Funders benefit from a large positive impact and incur project 
+      risks. Retrospective funding encourages high-risk/high-potential public goods.
+      <br /><br />
+      <i>Retrospective funding shouldn’t be used in cases where a significant negative 
+      impact is possible since a nongovernmental, permissionless framework can’t 
+      impose retrospective penalties for negative externalities.</i>
     </Feature>
     <Feature
       id="de-risking"
@@ -130,8 +128,9 @@ const IndexPage = () => (
           Events
         </h3>
         <p className="leading-paragraph text-xl">
-          HyperCerts.xyz is closely connected with the communities of Schelling
-          Point, Funding the Commons and the Sustainable Blockchain Summit.
+          HyperCerts.xyz originated from the communities of Funding the Commons, 
+          Schelling Point, and the Sustainable Blockchain Summit and we are grateful 
+          to be part of these communities.
         </p>
         <Item date="October 26, 2022">
           <a href="https://fundingthecommons.io/" target="_blank">
