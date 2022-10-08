@@ -1,5 +1,6 @@
-import * as React from "react"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
+import * as React from "react"
 
 export default function Header() {
   return (
@@ -14,19 +15,19 @@ export default function Header() {
 
       <ul className="flex-row flex space-x-12 items-center font-bold">
         <li>
-          <Link
-            to="https://network-goods.github.io/hypercerts-docs/"
+          <OutboundLink
+            href="https://network-goods.github.io/hypercerts-docs/"
             target="_blank"
           >
             <span className="sm:hidden">Docs</span>
             <span className="hidden sm:inline">Documentation</span>
-          </Link>
+          </OutboundLink>
         </li>
         {/* <li>
-          <Link to="/app">
+          <OutboundLink to="/app">
             Launch Pilot
             <span className="hidden sm:inline">{' '}App</span>
-          </Link>
+          </OutboundLink>
         </li> */}
       </ul>
     </header>

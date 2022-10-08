@@ -1,5 +1,5 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import * as React from "react"
-import { Link } from "gatsby"
 
 export default function Footer() {
   return (
@@ -11,25 +11,25 @@ export default function Footer() {
       </div>
       <ul className="flex flex-col items-center sm:flex-row justify-evenly pb-10 pt-6">
         <li>
-          <Link to="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">Telegram</Link>
+          <OutboundLink href="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">Telegram</OutboundLink>
         </li>
         <li>
-          <Link to="https://forms.gle/ACe4doFJh7bW9nac7" target="_blank">
+          <OutboundLink href="https://forms.gle/ACe4doFJh7bW9nac7" target="_blank">
             Sign up for updates
-          </Link>
+          </OutboundLink>
         </li>
         <li>
-          <Link target="_blank" to="https://protocol.ai/legal/#privacy-policy">
+          <OutboundLink target="_blank" href="https://protocol.ai/legal/#privacy-policy">
             Privacy policy
-          </Link>
+          </OutboundLink>
         </li>
         <li>
-          <Link
+          <OutboundLink
             target="_blank"
-            to="https://protocol.ai/legal/#terms-of-service"
+            href="https://protocol.ai/legal/#terms-of-service"
           >
             Terms &amp; Conditions
-          </Link>
+          </OutboundLink>
         </li>
       </ul>
     </footer>

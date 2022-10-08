@@ -3,6 +3,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const IndexPage = () => (
   <Layout>
@@ -107,21 +108,21 @@ const IndexPage = () => (
         </p>
         <ul className="flex flex-col text-xl leading-paragraph  sm:flex-row justify-between pb-10 pt-6 max-w-xs font-medium">
           <li>
-            <Link
+            <OutboundLink
               className="cursor-pointer"
-              to="https://t.me/+YF9AYb6zCv1mNDJi"
+              href="https://t.me/+YF9AYb6zCv1mNDJi"
             >
               Telegram
-            </Link>
+            </OutboundLink>
           </li>
           <li>
-            <Link
+            <OutboundLink
               className="cursor-pointer"
-              to="https://forms.gle/ACe4doFJh7bW9nac7"
+              href="https://forms.gle/ACe4doFJh7bW9nac7"
               target="_bla"
             >
               Sign up for updates
-            </Link>
+            </OutboundLink>
           </li>
         </ul>
         <hr className="max-w-xs mt-24 mb-4" />

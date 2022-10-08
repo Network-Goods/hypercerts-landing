@@ -1,6 +1,7 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import * as React from "react"
 
-import { Link } from "gatsby"
+
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
@@ -57,9 +58,9 @@ export default function AppPage() {
             How would you use HyperCerts? Let's connect and collaborate.
             <br />
             <br />
-            <Link to="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">
+            <OutboundLink href="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">
               Telegram
-            </Link>
+            </OutboundLink>
           </p>
         </div>
         <div className="md:w-1/3 w-full">
@@ -72,9 +73,9 @@ export default function AppPage() {
             applications on the HyperCerts Ledger.
             <br />
             <br />
-            <Link to="https://pilot.hypercerts.xyz" target="_blank">
+            <OutboundLink href="https://pilot.hypercerts.xyz" target="_blank">
               Pilot App
-            </Link>
+            </OutboundLink>
           </p>
         </div>
       </section>
