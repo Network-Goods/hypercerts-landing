@@ -24,7 +24,7 @@ export default function Header() {
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink href="/app">
+          <OutboundLink href="app">
             Launch Pilot
             <span className="hidden sm:inline">{' '}App</span>
           </OutboundLink>
