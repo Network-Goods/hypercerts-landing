@@ -1,9 +1,9 @@
 import * as React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
-import { Link } from "gatsby"
+import ExampleToken from "../images/example-token.svg"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const IndexPage = () => (
   <Layout>
@@ -28,7 +28,7 @@ const IndexPage = () => (
     </section>
     <section id="features-token" className="p-8 md:p-36 md:flex md:flex-row">
       <p className="w-64 md:w-1/2 order-2 flex-shrink mx-auto md:mx-0 align-top mb-16 md:mb-0">
-        <img src="example-token.svg" />
+        <ExampleToken />
       </p>
       <div className="order-1 md:w-1/2 flex-shrink md:mr-24">
         <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-evergreen leading-headline mb-9">
@@ -51,7 +51,7 @@ const IndexPage = () => (
     >
       Retrospective funding rewards projects for the impact they have created.
       As long as projects create impact, they can create HyperCerts for the
-      impact and get retrospective rewards for these. In contrast to today’s 
+      impact and get retrospective rewards for these. In contrast to today’s
       grant systems, projects have recurring income streams.
     </Feature>
     <Feature
@@ -59,14 +59,19 @@ const IndexPage = () => (
       image="high-potential.svg"
       headline="High-potential public goods"
     >
-      Buying HyperCerts retrospectively allows funders to increase their funding in 
-      relation to the impact created, incentivizing projects to maximize their 
-      positive impact. Funders benefit from a large positive impact and incur project 
-      risks. Retrospective funding encourages high-risk/high-potential public goods.
-      <br /><br />
-      <i>Retrospective funding shouldn’t be used in cases where a significant negative 
-      impact is possible since a nongovernmental, permissionless framework can’t 
-      impose retrospective penalties for negative externalities.</i>
+      Buying HyperCerts retrospectively allows funders to increase their funding
+      in relation to the impact created, incentivizing projects to maximize
+      their positive impact. Funders benefit from a large positive impact and
+      incur project risks. Retrospective funding encourages
+      high-risk/high-potential public goods.
+      <br />
+      <br />
+      <i>
+        Retrospective funding shouldn’t be used in cases where a significant
+        negative impact is possible since a nongovernmental, permissionless
+        framework can’t impose retrospective penalties for negative
+        externalities.
+      </i>
     </Feature>
     <Feature
       id="de-risking"
@@ -128,9 +133,9 @@ const IndexPage = () => (
           Events
         </h3>
         <p className="leading-paragraph text-xl">
-          HyperCerts.xyz originated from the communities of Funding the Commons, 
-          Schelling Point, and the Sustainable Blockchain Summit and we are grateful 
-          to be part of these communities.
+          HyperCerts.xyz originated from the communities of Funding the Commons,
+          Schelling Point, and the Sustainable Blockchain Summit and we are
+          grateful to be part of these communities.
         </p>
         <Item date="October 26, 2022">
           <a href="https://fundingthecommons.io/" target="_blank">

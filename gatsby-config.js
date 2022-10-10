@@ -1,10 +1,10 @@
 module.exports = {
-  pathPrefix: "/hypercerts-landing",
+  // pathPrefix: "/hypercerts-landing",
   siteMetadata: {
     title: `HyperCerts`,
     description: `Using the same HyperCert primitive, funders and projects create a scalable, interoperable and transparent funding environment for innovative public goods.`,
     author: `@protocollabs`,
-    siteUrl: `https://network-goods.github.io/hypercerts-landing`,
+    siteUrl: `https://hypercerts.xyz`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -49,13 +49,12 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: ["G-7PWVTP0VPX"],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
+        trackingIds: ["G-7PWVTP0VPX", "GT-5RMLPMS", "GTM-NG5R2SH"],
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
-          cookie_expires: 0,
+        },
+        pluginConfig: {
+          respectDNT: true,
         },
       },
     },
