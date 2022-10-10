@@ -1,15 +1,24 @@
+import * as React from "react"
 import { Link } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
-import * as React from "react"
+
+import Logo from "../images/logo.svg"
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-backgreen to-backsun py-5 px-10 flex flex-row justify-between text-copy text-xl">
+    <header
+      className="bg-gradient-to-r from-backgreen to-backsun py-5 px-10 flex flex-row justify-between text-copy text-xl"
+      style={{
+        background:
+          "linear-gradient(to right, rgb(161, 230, 218), rgb(254, 245, 172))",
+      }}
+    >
       <Link
         to="/"
         className="flex flex-row items-center space-x-2 no-underline"
       >
-        <img alt="Hypercerts logo" height={16} src="logo.svg" />
+        <Logo alt="Hypercerts logo" className="h-8" />
+        {/* <img alt="Hypercerts logo" height={16} src="logo.svg" /> */}
         <span>HyperCerts</span>
       </Link>
 
@@ -23,12 +32,12 @@ export default function Header() {
             <span className="hidden sm:inline">Documentation</span>
           </OutboundLink>
         </li>
-        <li>
-          <OutboundLink href="app">
+        {/* <li>
+          <Link to="app">
             Launch Pilot
             <span className="hidden sm:inline">{' '}App</span>
-          </OutboundLink>
-        </li>
+          </Link>
+        </li> */}
       </ul>
     </header>
   )
