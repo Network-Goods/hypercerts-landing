@@ -32,12 +32,12 @@ export default function Header() {
             <span className="hidden sm:inline">Documentation</span>
           </OutboundLink>
         </li>
-        {/* <li>
+        <li>
           <Link to="app">
             Launch Pilot
-            <span className="hidden sm:inline">{' '}App</span>
+            <span className="hidden sm:inline"> App</span>
           </Link>
-        </li> */}
+        </li>
       </ul>
     </header>
   )
