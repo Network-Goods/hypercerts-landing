@@ -19,7 +19,7 @@ export default function Header() {
       >
         <Logo alt="Hypercerts logo" className="h-8" />
         {/* <img alt="Hypercerts logo" height={16} src="logo.svg" /> */}
-        <span>HyperCerts</span>
+        <span>hypercerts</span>
       </Link>
 
       <ul className="flex-row flex space-x-12 items-center font-bold">

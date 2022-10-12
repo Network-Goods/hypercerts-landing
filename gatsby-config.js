@@ -1,8 +1,8 @@
 module.exports = {
   // pathPrefix: "/hypercerts-landing",
   siteMetadata: {
-    title: `HyperCerts`,
-    description: `Using the same HyperCert primitive, funders and projects create a scalable, interoperable and transparent funding environment for innovative public goods.`,
+    title: `Hypercerts`,
+    description: `Using the same Hypercert primitive, funders and projects create a scalable, interoperable and transparent funding environment for innovative public goods.`,
     author: `@protocollabs`,
     siteUrl: `https://hypercerts.xyz`,
   },

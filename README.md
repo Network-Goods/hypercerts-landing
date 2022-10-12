@@ -1,4 +1,4 @@
-# Landing Page for HyperCerts
+# Landing Page for Hypercerts
 
 
 # Edit Content

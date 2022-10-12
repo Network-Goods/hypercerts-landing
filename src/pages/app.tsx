@@ -55,7 +55,7 @@ export default function AppPage() {
             Join Community
           </h2>
           <p className="text-xl font-medium leading-paragraph">
-            How would you use HyperCerts? Let's connect and collaborate.
+            How would you use hypercerts? Let's connect and collaborate.
             <br />
             <br />
             <OutboundLink href="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank">
@@ -70,7 +70,7 @@ export default function AppPage() {
           <p className="text-xl font-medium leading-paragraph">
             Be among the first people to see what it feels like to claim real
             impact. Have a look at our pilot app - the first of many
-            applications on the HyperCerts Ledger.
+            applications on the hypercerts Ledger.
             <br />
             <br />
             <OutboundLink href="https://pilot.hypercerts.xyz" target="_blank">

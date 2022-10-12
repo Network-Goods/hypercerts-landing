@@ -18,7 +18,7 @@ const IndexPage = () => (
     >
       <h1 className="text-4xl mb-5 sm:mb-2 sm:text-6xl font-black text-center text-bark !leading-headline">
         Rewarding impact
-        <br /> with HyperCerts
+        <br /> with Hypercerts
       </h1>
       <p className=" max-w-2xl leading-paragraph font-bold text-xl text-center">
         To solve the challenges we face in this century, we need scalable and
@@ -32,14 +32,14 @@ const IndexPage = () => (
       </p>
       <div className="order-1 md:w-1/2 flex-shrink md:mr-24">
         <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-evergreen leading-headline mb-9">
-          HyperCerts are a tool to build scalable retrospective reward systems
+          Hypercerts are a tool to build scalable retrospective reward systems
           for impact.
         </h2>
         <p className="text-xl font-medium leading-paragraph ">
-          HyperCerts are like carbon credits, but on any impact vector. While
+          Hypercerts are like carbon credits, but on any impact vector. While
           carbon credits are not perfect, they allow to reward projects for
           positive outcomes retrospectively, i.e. when these outcomes are
-          observable. HyperCerts enable this for other impact areas, such as
+          observable. hypercerts enable this for other impact areas, such as
           education, healthcare, AI safety and open source software.
         </p>
       </div>
@@ -50,7 +50,7 @@ const IndexPage = () => (
       headline="Recurring income for public goods"
     >
       Retrospective funding rewards projects for the impact they have created.
-      As long as projects create impact, they can create HyperCerts for the
+      As long as projects create impact, they can create hypercerts for the
       impact and get retrospective rewards for these. In contrast to today’s
       grant systems, projects have recurring income streams.
     </Feature>
@@ -59,7 +59,7 @@ const IndexPage = () => (
       image="high-potential.svg"
       headline="High-potential public goods"
     >
-      Buying HyperCerts retrospectively allows funders to increase their funding
+      Buying hypercerts retrospectively allows funders to increase their funding
       in relation to the impact created, incentivizing projects to maximize
       their positive impact. Funders benefit from a large positive impact and
       incur project risks. Retrospective funding encourages
@@ -92,7 +92,7 @@ const IndexPage = () => (
       }}
     >
       <h2 className="md:px-28 my-44 text-2xl sm:text-4xl font-black text-center text-evergreen !leading-headline">
-        Using the same HyperCert primitive, funders and projects create a
+        Using the same hypercert primitive, funders and projects create a
         scalable, interoperable and transparent funding environment for
         innovative public goods.
       </h2>
@@ -133,7 +133,7 @@ const IndexPage = () => (
           Events
         </h3>
         <p className="leading-paragraph text-xl">
-          HyperCerts.xyz originated from the communities of Funding the Commons,
+          hypercerts.xyz originated from the communities of Funding the Commons,
           Schelling Point, and the Sustainable Blockchain Summit and we are
           grateful to be part of these communities.
         </p>
