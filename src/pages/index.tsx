@@ -17,7 +17,7 @@ const IndexPage = () => (
       }}
     >
       <h1 className="text-4xl mb-5 sm:mb-2 sm:text-6xl font-black text-center text-bark !leading-headline">
-        Rewarding impact
+        Rewarding Impact
         <br /> with Hypercerts
       </h1>
       <p className=" max-w-2xl leading-paragraph font-bold text-xl text-center">
