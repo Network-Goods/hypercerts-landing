@@ -33,7 +33,7 @@ export default function Header() {
           </OutboundLink>
         </li>
         <li>
-          <Link to="app">
+          <Link to="/app">
             Launch Pilot
             <span className="hidden sm:inline"> App</span>
           </Link>
