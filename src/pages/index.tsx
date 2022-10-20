@@ -164,6 +164,32 @@ const IndexPage = () => (
         <h3 className="text-evergreen font-black leading-headline text-3xl mb-5">
           Blogposts, Podcasts, and Talks
         </h3>
+        <Item date="October 13, 2022">
+          <a
+            href="https://youtu.be/YpIQoq_bfu8"
+            target="_blank"
+          >
+            Hypercerts for Regenerative Cryptoeconomics​
+          </a>
+          <br />
+          by{" "}
+          <a href="http://twitter.com/emiyazono" target="_blank">
+            @emiyazono
+          </a>
+        </Item>
+        <Item date="October 12, 2022">
+          <a
+            href="https://youtu.be/1_navTxlewg"
+            target="_blank"
+          >
+            How Impact Certificates Will Change Web3 Incentive for Impact​
+          </a>
+          <br />
+          by{" "}
+          <a href="https://twitter.com/holkeb" target="_blank">
+            @holkeb
+          </a>
+        </Item>
         <Item date="August 24, 2022">
           <a
             href="https://protocol.ai/blog/hypercert-new-primitive/"
