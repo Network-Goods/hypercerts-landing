@@ -32,7 +32,6 @@ export default function Footer() {
           </OutboundLink>
         </li>
       </ul>
-      Hi!
     </footer>
   )
 }
