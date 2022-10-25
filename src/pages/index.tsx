@@ -137,6 +137,15 @@ const IndexPage = () => (
           Schelling Point, and the Sustainable Blockchain Summit and we are
           grateful to be part of these communities.
         </p>
+        <Item date="November 02, 2022">
+          <a href="https://protocol.zoom.us/meeting/register/tJApf-GhqjwsEtOjtcAG3yZLSVFU5kw2fkTs" target="_blank">
+            Hypercert community call #1 (register now)
+          </a>{" "}
+          @{" "}
+          <a href="https://labweek2022.plnetwork.io/" target="_blank">
+            LabWeek22
+          </a>
+        </Item>
         <Item date="October 26, 2022">
           <a href="https://fundingthecommons.io/" target="_blank">
             Funding the Commons
