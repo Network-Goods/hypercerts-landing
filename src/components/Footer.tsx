@@ -19,14 +19,14 @@ export default function Footer() {
           </OutboundLink>
         </li>
         <li>
-          <OutboundLink target="_blank" href="https://protocol.ai/legal/#privacy-policy">
+          <OutboundLink target="_blank" href="https://hypercerts.vercel.app/privacy">
             Privacy policy
           </OutboundLink>
         </li>
         <li>
           <OutboundLink
             target="_blank"
-            href="https://protocol.ai/legal/#terms-of-service"
+            href="https://hypercerts.vercel.app/terms"
           >
             Terms &amp; Conditions
           </OutboundLink>
